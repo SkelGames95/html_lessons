@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Types</title>
+  </head>
+  <body>
+    <label for="favorite_game">Choose your favorite game</label>
+    <select name="favorite_game" id="favorite_game">
+      <option value="Cyberpunk2077">Cyberpunk 2077</option>
+      <option value="Hogwarts Legacy">Hogwarts Legacy</option>
+      <option value="GTA V">GTA V</option></select
+    ><br /><br />
+    <label for="message">Write your message here:</label><br />
+    <textarea name="message" id="message" cols="80" rows="5" disabled>
+This is a placeholder text
+    </textarea><br /><br />
+    <label for="favorite_platform">What's your favorite platform?</label><br />
+    <input type="text" name="favorite_platform" id="favorite_platform" list="options"/>
+    <datalist id="options">
+        <option value="PS5">
+        <option value="PC">
+        <option value="Xbox Series X/S">
+        <option value="Switch">
+        <option value="Mobile">
+    </datalist>
+    <br /><br />
+    <input type="range" name="range" min="0" max="100" list="tickmarks"/>
+    <datalist id="tickmarks">
+        <option value="0">
+        <option value="25">
+        <option value="50">
+        <option value="75">
+        <option value="100">
+    </datalist>
+    <br /><br />
+    <button>Submit</button>
+  </body>
+</html>
