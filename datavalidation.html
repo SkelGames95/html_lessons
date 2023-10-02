@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="first_name">First name:</label>
+    <input type="text" name="first_name" required pattern="[A-Za-z]+" minlength="2" maxlength="20">
+    <br />
+    <br />
+    <label for="last_name">Last name:</label>
+    <input type="text" name="last_name" required pattern="[A-Za-z]+" minlength="2" maxlength="20">
+    <br />
+    <br />
+    <label for="email">E-mail:</label>
+    <input type="email" id="email">
+    <br />
+    <br />
+    <button>Submit</button>
+</body>
+</html>
